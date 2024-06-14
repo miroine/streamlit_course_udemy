@@ -51,14 +51,11 @@ def run_eda_app():
         categorical_columns = df.select_dtypes(include=["object","category"]).columns.tolist()
         numerical_columns = df.select_dtypes(include=["number"]).columns.tolist()
         # fix column widths
+        i,j =1,1
         if len(categorical_columns) < 1:
             j= 0.1
-        else:
-            i = 1
         if len(numerical_columns) < 1:
             j = 0.1
-        else: 
-            j = 1
         if submenu_choice == "Descriptive":
             st.dataframe(df.head())
       
