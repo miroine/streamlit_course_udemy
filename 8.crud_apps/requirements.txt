@@ -4,4 +4,4 @@ pandas
 plotly
 seaborn
 streamlit
-sqlite3
+
